@@ -46,6 +46,7 @@ p {
 
 a {
     color: #42dca3;
+    text-decoration: none;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -99,7 +100,7 @@ a:hover {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255, 255, 255, .8);
+    color: #42dca3;
     background-color: transparent;
 }
 
@@ -131,6 +132,7 @@ a:hover {
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
+
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
@@ -273,6 +275,10 @@ a:hover {
     border-width: 3px;
 }
 
+#about div img:hover {
+    border-color: #42dca3;
+}
+
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -292,9 +298,6 @@ a:hover {
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
 
     .download-section {
         padding: 100px 0;
@@ -349,6 +352,11 @@ ul.banner-social-buttons {
 
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
+    }
+
+    #about {
+        width: 90%;
+        padding-top: 50px;
     }
 }
 
