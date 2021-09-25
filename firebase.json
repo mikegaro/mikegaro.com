@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public/main",
+    "public": "public",
     "cleanUrls": true,
     "trailingSlash": true,
     "ignore": [
