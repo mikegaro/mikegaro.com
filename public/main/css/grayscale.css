@@ -167,7 +167,7 @@ a:hover {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 13px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -228,7 +228,7 @@ a:hover {
 }
 
 @-webkit-keyframes pulse {
-    0 {
+        {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
@@ -261,15 +261,18 @@ a:hover {
     }
 }
 
-.content-section {
-    padding-top: 100px;
-}
+#about {
+    min-height: 100%;
+    min-height: 100vh;
 
+    display: flex;
+    align-items: center;
+}
 
 #about div img {
     width: 250px;
     height: auto;
-    border-radius: 150px;
+    border-radius: 50px;
     border-style: solid;
     border-color: white;
     border-width: 3px;
@@ -289,6 +292,10 @@ a:hover {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 #map {
