@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: 'Cutive Mono', monospace;
     color: #fff;
-    background-color: #000;
+    background-color: #121212;
 }
 
 html {
@@ -66,7 +66,7 @@ a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     text-transform: uppercase;
     font-family: 'Righteous', cursive;
-    background-color: #000;
+    background-color: #232F34;
 }
 
 .navbar-custom .navbar-brand {
@@ -137,7 +137,7 @@ a:hover {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255, 255, 255, .3);
-        background: #000;
+        background: #121212;
     }
 }
 
@@ -266,20 +266,22 @@ a:hover {
     min-height: 100vh;
 
     display: flex;
-    align-items: center;
 }
 
 #about div img {
     width: 250px;
     height: auto;
-    border-radius: 50px;
+    border-radius: 60px;
     border-style: solid;
-    border-color: white;
+    border-color: #505050;
     border-width: 3px;
+    filter: grayscale(100%);
+    transition: border-color 2s linear;
 }
 
 #about div img:hover {
     border-color: #42dca3;
+    filter: grayscale(0%);
 }
 
 .download-section {
@@ -336,7 +338,7 @@ a:hover {
 .btn-default:focus {
     border: 1px solid #42dca3;
     outline: 0;
-    color: #000;
+    color: #232F34;
     background-color: #42dca3;
 }
 
@@ -397,4 +399,24 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255, 255, 255, .2);
+}
+
+footer {
+    background: black;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+#contact {
+    height: 50%;
+}
+
+#skills {
+    height: 100%;
+}
+
+.content-section {
+    padding-top: 10rem;
 }
