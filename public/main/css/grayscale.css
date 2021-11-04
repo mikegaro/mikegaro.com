@@ -201,31 +201,12 @@ a:hover {
     transition: background .3s ease-in-out;
 }
 
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 0;
+.btn-circle:hover {
     color: #42dca3;
-    background: rgba(255, 255, 255, .1);
     border-color: #42dca3;
+    text-decoration: none;
 }
 
-.btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
 
 @-webkit-keyframes pulse {
         {
@@ -419,4 +400,20 @@ footer p {
 
 .content-section {
     padding-top: 10rem;
+}
+
+.path {
+    fill: #42dca3;
+}
+
+.svg {
+    border: 1px solid #42dca3;
+}
+
+.svg:hover {
+    background: #42dca3;
+}
+
+.svg:hover .path {
+    fill: black;
 }
