@@ -1,0 +1,28 @@
+.header_uno {
+    height: 100vh;
+    background: url(../img/uno.jpg) no-repeat center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.header_dos {
+    height: 100vh;
+    background: url(../img/dos.jpg) no-repeat center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.header_tres {
+    height: 100vh;
+    background: url(../img/tres.jpg) no-repeat center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* BREAKPOINTS */
