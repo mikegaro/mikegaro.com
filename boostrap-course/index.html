@@ -1,0 +1,446 @@
+<!-- HTML5 -->
+<!doctype html>
+
+<!-- ESPAÑOL -->
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="First Project UDEMY course">
+    <meta name="author" content="Miguel Oñate">
+    <link rel="shortcut icon" href="#">
+    <title>Primer proyecto...</title>
+    <link rel="apple-touch-icon" href="#"> <!-- Apple Touch Icon (at least 200x200px) -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Has no effect unless you have the previous meta tag -->
+
+    <!--       LINKS CSS/JS     -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/093b5f02bb.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body>
+
+    <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item header_uno active"></div>
+            <div class="carousel-item header_dos"></div>
+            <div class="carousel-item header_tres"></div>
+        </div>
+    </div>
+    <!-- ========== HEADER ========= -->
+    <h2>Colores</h2>
+    <h4 class="text-primary">Primary</h4>
+    <h4 class="text-secondary">Secondary</h4>
+    <h4 class="text-success">Success</h4>
+    <h4 class="text-warning">Warning</h4>
+    <h4 class="text-danger">Danger</h4>
+    <h4 class="text-info">INFO</h4>
+
+    <div class="container mb-5">
+        <h2>DISPLAY UTILITY</h2>
+        <h3 class="bg-dark text-white d-block">TEXTO CON DISPLAY BLOCK</h3>
+        <h3 class="bg-dark text-white d-inline">TEXTO CCON DISPLAY INLINE</h3>
+        <span class="bg-info text-white">I AM A REGULAR SPAN</span>
+        <span class="bg-info text-white d-block">I AM A BLOCK SPAN</span>
+        <h1 class="d-none d-sm-block">VISIBLE EXCEPTO EN XS</h1>
+        <h1 class="d-none d-sm-block"></h1>
+        <h2 class="bg-dark text-white d-sm-none">CURRENT BREAKPOINT IS: XS</h2>
+        <h2 class="bg-dark text-white d-none d-sm-inline d-md-none">CURRENT BREAKPOINT IS: SM</h2>
+        <h2 class="bg-dark text-white d-none d-md-inline d-lg-none">CURRENT BREAKPOINT IS: MD</h2>
+        <h2 class="bg-dark text-white d-none d-lg-inline d-xl-none">CURRENT BREAKPOINT IS: LG</h2>
+        <h2 class="bg-dark text-white d-none d-xl-inline">CURRENT BREAKPOINT IS: XL</h2>
+    </div>
+
+    <div class="container bg-info mb-5">
+        <h1 class="text-white border-right">BORDERS</h1>
+        <span class="border">Hola</span>
+        <span class="border">Hola</span>
+        <span class="border-top">Hola</span>
+        <span class="border-end">Hola</span>
+        <span class="border-bottom">Hola</span>
+        <span class="border-start">Hola</span>
+    </div>
+
+    <div class="container">
+        <h1 class="p-0 bg-info d-inline-block">p-0</h1>
+        <h1 class="p-1 bg-info d-inline-block">p-1</h1>
+        <h1 class="p-2 bg-info d-inline-block">p-2</h1>
+        <h1 class="p-3 bg-info d-inline-block">p-3</h1>
+        <h1 class="p-4 bg-info d-inline-block">p-4</h1>
+        <h1 class="p-5 bg-info d-inline-block">p-5</h1>
+    </div>
+
+    <div class="container pt-5">
+
+
+        <!-- FORM CONTROL -->
+
+
+        <h1 class="text-primary">FORM CONTROLS</h1>
+        <form action="">
+            <div class="form-group">
+                <label for="email">CORREO</label>
+                <input type="email" id="" class="form-control" placeholder="Correo">
+            </div>
+            <div class="form-group">
+                <label for="password">CONTRASEÑA</label>
+                <input type="password" id="password" class="form-control" placeholder="Contreseña">
+                <small class="text-muted">La contraseña deberá contener 8 caracteres</small>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <select id="" class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">TEXT AREA</label>
+                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Hola</label>
+                <input type="file" class="form-control" id="">
+            </div>
+            <div class="form-group">
+                <label for="customRange1" class="form-label">Example range</label>
+                <input type="range" class="form-range" id="customRange1">
+            </div>
+        </form>
+
+
+        <!-- CHECHBOXES -->
+
+
+        <h1 class="mt-5">CHECKBOXES</h1>
+        <h2>Normal</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+                Checked checkbox
+            </label>
+        </div>
+        <h2>RADIOS</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Default radio
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                Default checked radio
+            </label>
+        </div>
+        <h2>SWITCHES</h2>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked
+                disabled>
+            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox
+                input</label>
+        </div>
+    </div>
+
+
+    <!-- INPUT GROUP FORM -->
+
+
+    <div class="container pt-5">
+        <h1 class="text-primary">INPUT GROUP FORM</h1>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+
+        <label for="basic-url" class="form-label">Your vanity URL</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text">With textarea</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+
+        <div class="input-group p-2">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                </span>
+            </div>
+            <input type="password" class="form-control" placeholder="password">
+        </div>
+    </div>
+
+
+
+    <!-- NAVS -->
+
+
+
+    <div class="container">
+        <h1 class="text-center text-primary">NAVS</h1>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="" class="nav-link">First</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">SECOND</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">THIRD</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">FOURTH</a>
+            </li>
+        </ul>
+        <ul class="nav nav-tabs py-5">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+
+        <h2>FLEXBOX+NAVS</h2>
+        <h3>flex column if XS, ROW FOR SM AND ABOVE</h3>
+        <nav class="nav flex-column flex-sm-row">
+            <a href="" class="nav-link">Uno</a>
+            <a href="" class="nav-link">Dos</a>
+            <a href="" class="nav-link">Tres</a>
+            <a href="" class="nav-link">Cuatro</a>
+        </nav>
+        <h3>JUSTIFY END</h3>
+        <nav class="nav justify-content-end">
+            <a href="" class="nav-link">Uno</a>
+            <a href="" class="nav-link">Dos</a>
+            <a href="" class="nav-link">Tres</a>
+            <a href="" class="nav-link">Cuatro</a>
+        </nav>
+        <h3>JUSTIFY CENTER</h3>
+        <nav class="nav justify-content-center">
+            <a href="" class="nav-link">Uno</a>
+            <a href="" class="nav-link">Dos</a>
+            <a href="" class="nav-link">Tres</a>
+            <a href="" class="nav-link">Cuatro</a>
+        </nav>
+        <h3>JUSTIFY BETWEEN</h3>
+        <nav class="nav justify-content-between">
+            <a href="" class="nav-link">Uno</a>
+            <a href="" class="nav-link">Dos</a>
+            <a href="" class="nav-link">Tres</a>
+            <a href="" class="nav-link">Cuatro</a>
+        </nav>
+        <h3>JUSTIFY AROUND</h3>
+        <nav class="nav flex-column justify-content-around">
+            <a href="" class="nav-link">Uno</a>
+            <a href="" class="nav-link">Dos</a>
+            <a href="" class="nav-link">Tres</a>
+            <a href="" class="nav-link">Cuatro</a>
+        </nav>
+
+        <div class="container">
+            <h1 class="text-primary">GRID NESTING</h1>
+            <div class="row border">
+                <div class="col-sm">Left</div>
+                <div class="col-sm border">Right
+                    <div class="row border border-success">
+                        <div class="col-sm-4 border">Uno</div>
+                        <div class="col-sm-4 border">Dos</div>
+                        <div class="col-sm-4 border">Tres
+                            <div class="row">
+                                <div class="col-lg-3 border border-success">Col3</div>
+                                <div class="col-lg-9 border border-success">Col9</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <h1 class="text-primary">LIST GROUPS</h1>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    First thing
+                </li>
+                <li class="list-group-item active">Second thing</li>
+                <li class="list-group-item disabled">Third thing</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container my-5">
+        <h1 class="text-primary text-center">ALERTAS</h1>
+        <div class="alert alert-primary">
+            Cambios Guardados exitosamente :)
+        </div>
+        <div class="alert alert-danger">
+            Cuidado!
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <!-- fade show es para que desaparezca con suavidad -->
+            <!-- alert-dismissible es para quitar la alerta pero se requiere un button class="close" -->
+            <h4 class="alert-heading">CUIDADO!</h4>
+            <button class="close" data-bs-dismiss="alert">&times;</button>
+            <!-- data-bootstrap-dismiss para desaparecer la alerta -->
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h1 class="text-primary text-center">COLLAPSE AND ACCORDIONS</h1>
+        <a href="#contenido" class="btn btn-success" data-bs-toggle="collapse">Click Me!</a>
+        <div class="collapse" id="contenido">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">LE METI UN CARD JEJE</h4>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, repellendus.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h1 class="tex-primary text-center">SCROLLSPY</h1>
+        <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">First</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+            tabindex="0">
+            <h4 id="scrollspyHeading1">First heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading2">Second heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading3">Third heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading4">Fourth heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading5">Fifth heading</h4>
+            <p>...</p>
+        </div>
+        <div class="my-3">
+            <h2 class="text-primary text-center">LIST GROUP</h2>
+            <p>el contenido debe tener lo siguiente:</p>
+            <p>Scrollspy requires position: relative; on the element you’re spying on..</p>
+            <p>a height set and overflow-y: scroll; applied to it—alongside a tabindex="0" to ensure keyboard access.
+            </p>
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example"
+                tabindex="0" style="position: relative; overflow-y: scroll; height: 200px;">
+                <h4 id="list-item-1">Item 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id inventore error impedit expedita
+                    ducimus blanditiis officiis debitis voluptatum aliquam placeat voluptate voluptates quam
+                    dignissimos? Voluptates laudantium ab laboriosam earum ratione expedita. Delectus error reiciendis
+                    saepe in quibusdam fugit soluta voluptates officiis, nemo sed quam qui ab omnis cupiditate! Optio!
+                </p>
+                <h4 id="list-item-2">Item 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id inventore error impedit expedita
+                    ducimus blanditiis officiis debitis voluptatum aliquam placeat voluptate voluptates quam
+                    dignissimos? Voluptates laudantium ab laboriosam earum ratione expedita. Delectus error reiciendis
+                    saepe in quibusdam fugit soluta voluptates officiis, nemo sed quam qui ab omnis cupiditate! Optio!
+                </p>
+                <h4 id="list-item-3">Item 3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id inventore error impedit expedita
+                    ducimus blanditiis officiis debitis voluptatum aliquam placeat voluptate voluptates quam
+                    dignissimos? Voluptates laudantium ab laboriosam earum ratione expedita. Delectus error reiciendis
+                    saepe in quibusdam fugit soluta voluptates officiis, nemo sed quam qui ab omnis cupiditate! Optio!
+                </p>
+                <h4 id="list-item-4">Item 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id inventore error impedit expedita
+                    ducimus blanditiis officiis debitis voluptatum aliquam placeat voluptate voluptates quam
+                    dignissimos? Voluptates laudantium ab laboriosam earum ratione expedita. Delectus error reiciendis
+                    saepe in quibusdam fugit soluta voluptates officiis, nemo sed quam qui ab omnis cupiditate! Optio!
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- =======SCRIPT TAGS====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
